@@ -56,7 +56,6 @@ modules:
       - -DCMAKE_C_FLAGS=-g1 -O3
       - -DCMAKE_CXX_FLAGS=-g1 -O3 -fpermissive
       - -DSRB2_CONFIG_DEV_BUILD=OFF
-      - -DSRB2_CONFIG_ENABLE_WEBM_MOVIES=OFF
       - -DSRB2_SDL2_EXE_NAME=ringracers
     post-install:
       - mkdir -p $FLATPAK_DEST/bin
