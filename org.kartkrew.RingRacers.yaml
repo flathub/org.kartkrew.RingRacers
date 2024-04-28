@@ -15,6 +15,9 @@ finish-args:
   - --filesystem=xdg-run/discord-ipc-0
 
 modules:
+
+  - shared-modules/glu/glu-9.json
+
   - name: ringracers
     buildsystem: cmake-ninja
     builddir: true
