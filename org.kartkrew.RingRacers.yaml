@@ -25,6 +25,8 @@ modules:
       - type: archive
         url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.1.tar.gz
         sha256: 6980c398ca6ddb1e94cf60234483767390b396d693923437c98df8bd7d13b266
+      - type: patch
+        path: 0001-Check-if-mno-ms-bitfields-is-avail-before-using.patch
       - type: archive
         url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.1/Dr.Robotnik.s-Ring-Racers-v2.1-Assets.zip
         sha256: 8a2f3af3d996b6233e1aa2413d8f2a53213fd5f9e667665093370099436fc937
