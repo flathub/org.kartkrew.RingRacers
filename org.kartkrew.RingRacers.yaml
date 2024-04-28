@@ -15,6 +15,9 @@ finish-args:
   - --filesystem=xdg-run/discord-ipc-0
 
 modules:
+
+  - shared-modules/glu/glu-9.json
+
   - name: ringracers
     buildsystem: cmake-ninja
     builddir: true
@@ -22,10 +25,12 @@ modules:
       - type: archive
         url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.1.tar.gz
         sha256: 6980c398ca6ddb1e94cf60234483767390b396d693923437c98df8bd7d13b266
-      - type: file
+      - type: patch
+        path: 0001-Check-if-mno-ms-bitfields-is-avail-before-using.patch
+      - type: archive
         url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.1/Dr.Robotnik.s-Ring-Racers-v2.1-Assets.zip
         sha256: 8a2f3af3d996b6233e1aa2413d8f2a53213fd5f9e667665093370099436fc937
-        dest: build
+        dest: ringracers-data
         dest-filename: assets.zip
       - type: file
         path: ringracers.sh
@@ -49,9 +54,7 @@ modules:
       - install -Dm 644 ../$FLATPAK_ID.desktop -t $FLATPAK_DEST/share/applications
       - install -Dm 644 ../$FLATPAK_ID.metainfo.xml -t $FLATPAK_DEST/share/metainfo
       - install -Dm 644 ../$FLATPAK_ID.128.png $FLATPAK_DEST/share/icons/hicolor/128x128/apps/org.kartkrew.RingRacers.png
-      - mkdir -p $FLATPAK_DEST/ringracers-data
-      - unzip -d assets-extract ../build/assets.zip > /dev/null
-      - cd assets-extract && find . -type f -exec install -Dm 644 "{}" "$FLATPAK_DEST/ringracers-data/{}" \;
+      - cp -r ../ringracers-data $FLATPAK_DEST
 
 cleanup:
   - '*.a'
