@@ -24,7 +24,7 @@ modules:
     sources:
       - type: git
         url: https://salsa.debian.org/debian/libyuv.git
-        branch: debian/bullseye-backports
+        #branch: debian/bullseye-backports
         commit: 4eaff47800b3925874214c0cc4da9f3cc065a7f2
     config-opts:
       - -DCMAKE_BUILD_TYPE="Release"
