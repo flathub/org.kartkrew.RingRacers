@@ -18,6 +18,20 @@ modules:
 
   - shared-modules/glu/glu-9.json
 
+  - name: libvpx
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+    sources:
+      - type: git
+        url: https://github.com/webmproject/libvpx
+        tag: v1.14.0
+        commit: 602e2e8979d111b02c959470da5322797dd96a19
+        x-checker-data:
+          type: git
+          tag-pattern: ^(v[\d.]+)$
+
   - name: ringracers
     buildsystem: cmake-ninja
     builddir: true
@@ -45,7 +59,6 @@ modules:
       - -DCMAKE_C_FLAGS=-g1 -O3
       - -DCMAKE_CXX_FLAGS=-g1 -O3 -fpermissive
       - -DSRB2_CONFIG_DEV_BUILD=OFF
-      - -DSRB2_CONFIG_ENABLE_WEBM_MOVIES=OFF
       - -DSRB2_SDL2_EXE_NAME=ringracers
     post-install:
       - mkdir -p $FLATPAK_DEST/bin
