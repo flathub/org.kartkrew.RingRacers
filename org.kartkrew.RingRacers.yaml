@@ -16,7 +16,8 @@ finish-args:
 
 modules:
   - shared-modules/glu/glu-9.json
-  -name: libyuv
+  - name: libyuv
+    sources:
       - type: git
         url: https://chromium.googlesource.com/libyuv/libyuv.git
         commit: 6ac90403a19dc6dbe2239b94df6d499ca7c40452
