@@ -18,6 +18,17 @@ modules:
 
   - shared-modules/glu/glu-9.json
 
+  - name: libyup
+    buildsystem: cmake
+    builddir: true
+    sources:
+      - type: git
+        url: https://salsa.debian.org/debian/libyuv.git
+        #branch: debian/bullseye-backports
+        commit: 4eaff47800b3925874214c0cc4da9f3cc065a7f2
+    config-opts:
+      - -DCMAKE_BUILD_TYPE="Release"
+
   - name: ringracers
     buildsystem: cmake-ninja
     builddir: true
@@ -45,7 +56,6 @@ modules:
       - -DCMAKE_C_FLAGS=-g1 -O3
       - -DCMAKE_CXX_FLAGS=-g1 -O3 -fpermissive
       - -DSRB2_CONFIG_DEV_BUILD=OFF
-      - -DSRB2_CONFIG_ENABLE_WEBM_MOVIES=OFF
       - -DSRB2_SDL2_EXE_NAME=ringracers
     post-install:
       - mkdir -p $FLATPAK_DEST/bin
@@ -58,3 +68,4 @@ modules:
 
 cleanup:
   - '*.a'
+  - '/include'
