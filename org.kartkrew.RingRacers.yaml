@@ -43,6 +43,7 @@ modules:
         sha256: 8a2f3af3d996b6233e1aa2413d8f2a53213fd5f9e667665093370099436fc937
         dest: ringracers-data
         dest-filename: assets.zip
+        strip-components: 0
       - type: file
         path: ringracers.sh
       - type: file
