@@ -34,13 +34,11 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.1.tar.gz
-        sha256: 6980c398ca6ddb1e94cf60234483767390b396d693923437c98df8bd7d13b266
-      - type: patch
-        path: 0001-Check-if-mno-ms-bitfields-is-avail-before-using.patch
+        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.2.tar.gz
+        sha256: cf68c9fefba8e3b8e8c737b5e88aed87d5a67591991719f9b344e26ab7ea4c80
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.1/Dr.Robotnik.s-Ring-Racers-v2.1-Assets.zip
-        sha256: 8a2f3af3d996b6233e1aa2413d8f2a53213fd5f9e667665093370099436fc937
+        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.2/Dr.Robotnik.s-Ring-Racers-v2.2-Assets.zip
+        sha256: a7d62effb76c64819c9f6678e3151799ef4dbf7488e51241147a9dcf301b8736
         dest: ringracers-data
         dest-filename: assets.zip
         strip-components: 0

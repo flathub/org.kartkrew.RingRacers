@@ -67,6 +67,15 @@
 		<binary>ringracers</binary>
 	</provides>
 	<releases>
+		<release version="2.2" date="2024-05-06">
+			<description>
+				<p>Version 2.2 release</p>
+				<p>Auto Ring, balance adjustments, and more!</p>
+			</description>
+			<url>
+				https://www.kartkrew.org/news/2024-05-06_dr-robotniks-ring-racers-version-22.html
+			</url>
+		</release>
 		<release version="2.1" date="2024-04-26">
 			<description>
 				<p>Version 2.1 release</p>
