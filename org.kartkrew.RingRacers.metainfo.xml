@@ -67,6 +67,15 @@
 		<binary>ringracers</binary>
 	</provides>
 	<releases>
+		<release version="2.3" date="2024-05-21">
+			<description>
+				<p>Version 2.3 release</p>
+				<p>Major control improvements and bug fixes galore</p>
+			</description>
+			<url>
+				https://www.kartkrew.org/news/2024-05-21_dr-robotniks-ring-racers-version-23.html
+			</url>
+		</release>
 		<release version="2.2" date="2024-05-06">
 			<description>
 				<p>Version 2.2 release</p>
