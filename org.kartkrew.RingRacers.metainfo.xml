@@ -62,7 +62,11 @@
 	</screenshots>
 	<url type="homepage">https://www.kartkrew.org</url>
 	<url type="bugtracker">https://git.do.srb2.org/KartKrew/RingRacers/-/issues</url>
-	<developer_name>Kart Krew Dev</developer_name>
+	<url type="help">https://www.kartkrew.org/rr-manual/manual/landing/</url>
+	<url type="vcs-browser">https://git.do.srb2.org/KartKrew/RingRacers</url>
+	<developer id="org.kartkrew">
+		<name>Kart Krew Dev</name>
+	</developer>
 	<provides>
 		<binary>ringracers</binary>
 	</provides>
@@ -104,6 +108,21 @@
 			</url>
 		</release>
 	</releases>
+	<categories>
+		<category>Game</category>
+		<category>ArcadeGame</category>
+	</categories>
+	<keywords>
+		<keyword>sonic</keyword>
+		<keyword>kart</keyword>
+	</keywords>
+	<recommends>
+		<control>gamepad</control>
+	</recommends>
+	<supports>
+		<control>keyboard</control>
+		<internet>offline-only</internet>
+	</supports>
 	<content_rating type="oars-1.1">
 		<content_attribute id="violence-cartoon">moderate</content_attribute>
 		<content_attribute id="language-humor">mild</content_attribute>
