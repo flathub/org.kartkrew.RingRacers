@@ -110,11 +110,12 @@
 	</releases>
 	<categories>
 		<category>Game</category>
-		<category>ArcadeGame</category>
+		<category>SportsGame</category>
 	</categories>
 	<keywords>
 		<keyword>sonic</keyword>
 		<keyword>kart</keyword>
+		<keyword>multiplayer</keyword>
 	</keywords>
 	<recommends>
 		<control>gamepad</control>
