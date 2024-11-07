@@ -130,4 +130,8 @@
 		<!-- Multiplayer is not centralized and relies on independent server moderators and thus counts as intense (see GZDoom package). -->
 		<content_attribute id="social-chat">intense</content_attribute>
 	</content_rating>
+	<branding>
+		<color type="primary" scheme_preference="light">#0b1a7f</color>
+		<color type="primary" scheme_preference="dark">#090836</color>
+	</branding>
 </component>
