@@ -1,6 +1,6 @@
 app-id: org.kartkrew.RingRacers
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: ringracers.sh
 finish-args:
@@ -18,14 +18,14 @@ modules:
 
   - shared-modules/glu/glu-9.json
 
-  - name: libyup
+  - name: libyuv
     buildsystem: cmake
     builddir: true
     sources:
       - type: git
         url: https://salsa.debian.org/debian/libyuv.git
-        #branch: debian/bullseye-backports
-        commit: 4eaff47800b3925874214c0cc4da9f3cc065a7f2
+        #branch: debian/0.0.1919.20250919-1
+        commit: 8f0761d7b98aa402548983b2f823e5c1e81d687b
     config-opts:
       - -DCMAKE_BUILD_TYPE="Release"
 
@@ -50,6 +50,8 @@ modules:
         path: org.kartkrew.RingRacers.metainfo.xml
       - type: file
         path: org.kartkrew.RingRacers.128.png
+      - type: patch
+        path: acsvm-cmake-ver.patch
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DCMAKE_C_FLAGS=-g1 -O3
