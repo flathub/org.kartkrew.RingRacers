@@ -34,11 +34,11 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.4-rc5.tar.gz
-        sha256: 5f27c50a2277d9ef34167f58dce886a4f36eeadbb2535ac77573ef80e7cb493b
+        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.4-rc6.tar.gz
+        sha256: b468cd694ebd86f7a4af2b0c152f9f2909391f5a38e332d306ab3150929aeb28
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.4-rc5/Dr.Robotnik.s-Ring-Racers-v2.4-rc5-Assets.zip
-        sha256: 8f5517dead83bbe7693cdeacc49519481b44e2c28eaf5a82369cfb55bf8b368e
+        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.4-rc6/Dr.Robotnik.s-Ring-Racers-v2.4-rc6-Assets.zip
+        sha256: 3615a2f05a53081611fe8649664d0851f469b33d404da9783072e2c20f5593d8
         dest: ringracers-data
         dest-filename: assets.zip
         strip-components: 0
@@ -50,8 +50,6 @@ modules:
         path: org.kartkrew.RingRacers.metainfo.xml
       - type: file
         path: org.kartkrew.RingRacers.128.png
-      - type: patch
-        path: 0001-Remove-unintended-g-warnings.patch
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DCMAKE_C_FLAGS=-g1 -O3
