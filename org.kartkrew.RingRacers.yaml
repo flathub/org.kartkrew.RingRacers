@@ -1,6 +1,6 @@
 app-id: org.kartkrew.RingRacers
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: ringracers.sh
 finish-args:
@@ -18,14 +18,14 @@ modules:
 
   - shared-modules/glu/glu-9.json
 
-  - name: libyup
+  - name: libyuv
     buildsystem: cmake
     builddir: true
     sources:
       - type: git
         url: https://salsa.debian.org/debian/libyuv.git
-        #branch: debian/bullseye-backports
-        commit: 4eaff47800b3925874214c0cc4da9f3cc065a7f2
+        #branch: debian/0.0.1919.20250919-1
+        commit: 8f0761d7b98aa402548983b2f823e5c1e81d687b
     config-opts:
       - -DCMAKE_BUILD_TYPE="Release"
 
@@ -34,11 +34,11 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.3.tar.gz
-        sha256: 68b1022f6ef92c178ca3b046b86a477edaec436ecd3c90a10221f3dcc2d45d81
+        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.4.tar.gz
+        sha256: f9f3970b9398783c3ba07bcd10ddb0256086896ce81cdfbe0457593ed04e9fcb
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.3/Dr.Robotnik.s-Ring-Racers-v2.3-Assets.zip
-        sha256: 9797d0886e9dc57e86e55d3893cc2872f771365056c1104b2effe01d18c2da44
+        url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.4/Dr.Robotnik.s-Ring-Racers-v2.4-Assets.zip
+        sha256: eebad71b872c20f3323425bc4f4321b9b6256472bc485010d0a73c43fe0af120
         dest: ringracers-data
         dest-filename: assets.zip
         strip-components: 0
