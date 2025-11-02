@@ -61,8 +61,12 @@
 		</screenshot>
 	</screenshots>
 	<url type="homepage">https://www.kartkrew.org</url>
-	<url type="bugtracker">https://git.do.srb2.org/KartKrew/RingRacers/-/issues</url>
-	<developer_name>Kart Krew Dev</developer_name>
+	<url type="bugtracker">https://gitlab.com/kart-krew-dev/ring-racers/-/issues</url>
+	<url type="help">https://www.kartkrew.org/rr-manual/manual/landing/</url>
+	<url type="vcs-browser">https://gitlab.com/kart-krew-dev/ring-racers</url>
+	<developer id="org.kartkrew">
+		<name>Kart Krew Dev</name>
+	</developer>
 	<provides>
 		<binary>ringracers</binary>
 	</provides>
@@ -113,10 +117,31 @@
 			</url>
 		</release>
 	</releases>
+	<categories>
+		<category>Game</category>
+		<category>SportsGame</category>
+	</categories>
+	<keywords>
+		<keyword>sonic</keyword>
+		<keyword>kart</keyword>
+		<keyword>multiplayer</keyword>
+	</keywords>
+	<recommends>
+		<control>gamepad</control>
+	</recommends>
+	<supports>
+		<control>keyboard</control>
+		<internet>offline-only</internet>
+	</supports>
 	<content_rating type="oars-1.1">
 		<content_attribute id="violence-cartoon">moderate</content_attribute>
 		<content_attribute id="language-humor">mild</content_attribute>
 		<!-- Multiplayer is not centralized and relies on independent server moderators and thus counts as intense (see GZDoom package). -->
 		<content_attribute id="social-chat">intense</content_attribute>
+		<content_attribute id="social-audio">intense</content_attribute>
 	</content_rating>
+	<branding>
+		<color type="primary" scheme_preference="light">#0b1a7f</color>
+		<color type="primary" scheme_preference="dark">#090836</color>
+	</branding>
 </component>

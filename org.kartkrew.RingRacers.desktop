@@ -7,4 +7,5 @@ TryExec=ringracers.sh
 Exec=ringracers.sh
 Icon=org.kartkrew.RingRacers
 Terminal=false
-Categories=Game;
+Categories=Game;SportsGame;
+Keywords=sonic;kart;multiplayer;
