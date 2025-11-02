@@ -34,11 +34,11 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.4-rc9.tar.gz
-        sha256: 4f71354a6b9ee0f4eb11d802f53c5b94a4f0df1c5442528caab833aca9a860e0
+        url: https://github.com/KartKrewDev/RingRacers/archive/refs/tags/v2.4.tar.gz
+        sha256: f9f3970b9398783c3ba07bcd10ddb0256086896ce81cdfbe0457593ed04e9fcb
       - type: archive
         url: https://github.com/KartKrewDev/RingRacers/releases/download/v2.4-rc9/Dr.Robotnik.s-Ring-Racers-v2.4-rc9-Assets.zip
-        sha256: 949db8a594363442cd9c49fd31298b6fff6a0fe3fbd57c813f24380047427685
+        sha256: eebad71b872c20f3323425bc4f4321b9b6256472bc485010d0a73c43fe0af120
         dest: ringracers-data
         dest-filename: assets.zip
         strip-components: 0

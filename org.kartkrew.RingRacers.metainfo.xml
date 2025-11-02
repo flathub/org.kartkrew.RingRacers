@@ -67,6 +67,15 @@
 		<binary>ringracers</binary>
 	</provides>
 	<releases>
+		<release version="2.4" date="2025-11-02">
+			<description>
+				<p>Version 2.4 release</p>
+				<p>Significant balance pass, new features and voice chat</p>
+			</description>
+			<url>
+				https://www.kartkrew.org/news/2025-11-02_dr-robotniks-ring-racers-version-24.html
+			</url>
+		</release>
 		<release version="2.3" date="2024-05-21">
 			<description>
 				<p>Version 2.3 release</p>
