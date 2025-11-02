@@ -61,7 +61,7 @@
 		</screenshot>
 	</screenshots>
 	<url type="homepage">https://www.kartkrew.org</url>
-	<url type="bugtracker">https://gitlab.com/kart-krew-dev/ring-racers/-/issues>
+	<url type="bugtracker">https://gitlab.com/kart-krew-dev/ring-racers/-/issues</url>
 	<url type="help">https://www.kartkrew.org/rr-manual/manual/landing/</url>
 	<url type="vcs-browser">https://gitlab.com/kart-krew-dev/ring-racers</url>
 	<developer id="org.kartkrew">
